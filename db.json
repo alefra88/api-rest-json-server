@@ -1,0 +1,108 @@
+
+{
+  "planeswalkers":[
+    {
+      "id":1,
+      "name":"Urza",
+      "origin":{
+        "plane":"Dominaria",
+        "region":"Keld",
+        "city":"Kroog"
+      },
+      "status":"Dead",
+      "power":"High spark",
+      "lastSeen":"Dominaria"
+
+    },{
+      "id":2,
+      "name":"Gideon",
+      "origin":{
+        "plane":"Theros",
+        "region":"Unknown",
+        "city":"Unknown"
+      },
+      "status":"Dead",
+      "power":"Hieromancy",
+      "lastSeen":"Amonkhet"
+
+    },{
+      "id":3,
+      "name":"Jace",
+      "origin":{
+        "plane":"Dominaria",
+        "region":"Unknown",
+        "city":"Vryn"
+      },
+      "status":"Alive",
+      "power":"mind mage",
+      "lastSeen":"New Phyrexia"
+
+    },{
+      "id":4,
+      "name":"Vraska",
+      "origin":{
+        "plane":"Ravnica",
+        "region":"Golgari",
+        "city":"Golgari"
+      },
+      "status":"Alive",
+      "power":"Petrifiyng sight",
+      "lastSeen":"New Phyrexia"
+
+    },{
+      "id":5,
+      "name":"Venser",
+      "origin":{
+        "plane":"Dominaria",
+        "region":"Otaria",
+        "city":"Urborg"
+      },
+      "status":"Dead",
+      "power":"Reality shape",
+      "lastSeen":"Mirrodin"
+
+    },{
+      "id":6,
+      "name":"Karn",
+      "origin":{
+        "plane":"Dominaria",
+        "region":"Jamuraa",
+        "city":"Tolarian Academy"
+      },
+      "status":"Alive",
+      "power":"Mastery over artifacts",
+      "lastSeen":"New Phyrexia"
+    }
+  ],"blocks":[
+    {
+      "id":1,
+      "name":"Mirrodin",
+      "sets":3,
+      "setNames":["Mirrodin","Dark Steel","Fith Dawn"]
+    },
+    {
+      "id":2,
+      "name":"Onslaught",
+      "sets":3,
+      "setNames":["Onslaught","Legions","Scourge"]
+    },
+    {
+      "id":3,
+      "name":"Kamigawa",
+      "sets":3,
+      "setNames":["Kamigawa","Betrayers of Kamigawa","Saviors of Kamigawa"]
+    },
+    {
+      "id":4,
+      "name":"Zendikar",
+      "sets":3,
+      "setNames":["Zendikar","Rise of Eldrazis","Worldwake"]
+    },
+    {
+      "id":5,
+      "name":"Lorwyn",
+      "sets":2,
+      "setNames":["Lorwyn","Morningtide"]
+    }
+  ]
+}
