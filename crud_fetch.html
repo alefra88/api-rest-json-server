@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>crud api rest fetch</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>CRUD API REST FETCH</h1>
+    <section class="crud">
+      <article>
+        <h2 class="crud-title">Agregar Planeswalker</h2>
+        <form class="crud-form">
+          <input
+            type="text"
+            name="nombre"
+            placeholder="nombre Planeswalker"
+            required
+          />
+          <br />
+          <input
+            type="text"
+            name="plane"
+            placeholder="name of plane"
+            required
+          />
+          <br />
+          <input type="text" name="status" placeholder="status" required />
+          <br />
+          <input type="text" name="power" placeholder="power" required />
+          <br />
+          <input
+            type="text"
+            name="last-seen"
+            placeholder="Last Seen"
+            required
+          />
+          <br />
+          <input type="submit" value="enviar" />
+          <input type="hidden" name="id" />
+        </form>
+      </article>
+      <article>
+        <h2>ver info</h2>
+        <table class="crud-table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Plane</th>
+              <th>Status</th>
+              <th>Power</th>
+              <th>Last-Seen</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </article>
+    </section>
+    <template id="crud-template">
+      <tr>
+        <td class="name"></td>
+        <td class="plane"></td>
+        <td class="status"></td>
+        <td class="power"></td>
+        <td class="last-seen"></td>
+      </tr>
+    </template>
+    <script src="app.js"></script>
+  </body>
+</html>
