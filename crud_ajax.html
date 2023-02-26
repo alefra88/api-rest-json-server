@@ -15,28 +15,18 @@
         <form class="crud-form">
           <input
             type="text"
-            name="nombre"
+            name="name"
             placeholder="nombre Planeswalker"
             required
           />
           <br />
-          <input
-            type="text"
-            name="plane"
-            placeholder="name of plane"
-            required
-          />
+          <input type="text" name="plane" placeholder="name of plane" />
           <br />
-          <input type="text" name="status" placeholder="status" required />
+          <input type="text" name="status" placeholder="status" />
           <br />
-          <input type="text" name="power" placeholder="power" required />
+          <input type="text" name="power" placeholder="power" />
           <br />
-          <input
-            type="text"
-            name="last-seen"
-            placeholder="Last Seen"
-            required
-          />
+          <input type="text" name="lastSeen" placeholder="Last Seen" />
           <br />
           <input type="submit" value="enviar" />
           <input type="hidden" name="id" />
@@ -47,11 +37,11 @@
         <table class="crud-table">
           <thead>
             <tr>
-              <th>Nombre</th>
-              <th>Plane</th>
-              <th>Status</th>
-              <th>Power</th>
-              <th>Last-Seen</th>
+              <th>name</th>
+              <th>plane</th>
+              <th>status</th>
+              <th>power</th>
+              <th>lastSeen</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -64,7 +54,7 @@
         <td class="plane"></td>
         <td class="status"></td>
         <td class="power"></td>
-        <td class="lastseen"></td>
+        <td class="lastSeen"></td>
         <td>
           <button class="edit">Editar</button>
           <button class="delete">Eliminar</button>

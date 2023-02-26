@@ -19,7 +19,7 @@
     {
       "id": 3,
       "name": "Jace",
-        "plane": "Dominaria",
+      "plane": "Dominaria",
       "status": "Alive",
       "power": "mind mage",
       "lastSeen": "New Phyrexia"
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "name": "Vraska",
-        "plane": "Ravnica",
+      "plane": "Ravnica",
       "status": "Alive",
       "power": "Petrifiyng sight",
       "lastSeen": "New Phyrexia"
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "name": "Venser",
-        "plane": "Dominaria",
+      "plane": "Dominaria",
       "status": "Dead",
       "power": "Reality shape",
       "lastSeen": "Mirrodin"
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "name": "Karn",
-        "plane": "Dominaria",
+      "plane": "Dominaria",
       "status": "Alive",
       "power": "Mastery over artifacts",
       "lastSeen": "New Phyrexia"
@@ -51,11 +51,27 @@
     {
       "id": 7,
       "name": "Ugin",
-        "plane": "Dominaria",
+      "plane": "Dominaria",
       "status": "Alive",
       "power": "Spirit dragon",
       "lastSeen": "Meditation Realm"
-    }
+    },
+      {
+        "id": 8,
+        "name": "Sarkhan Vol",
+        "plane": "Tarkir",
+        "status": "Alive",
+        "power": "Dragon form",
+        "lastSeen": "Tarkir"
+      },
+      {
+        "id": 9,
+        "name": "Sorin Markov",
+        "plane": "Innistrad",
+        "status": "Unknown",
+        "power": "Inmortal Vampire",
+        "lastSeen": "Innistrad"
+      }
   ],
   "blocks": [
     {

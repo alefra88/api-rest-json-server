@@ -36,7 +36,7 @@ const getAll = () => {
         $template.querySelector(".plane").textContent = el.plane;
         $template.querySelector(".status").textContent = el.status;
         $template.querySelector(".power").textContent = el.power;
-        $template.querySelector(".lastseen").textContent = el.lastSeen;
+        $template.querySelector(".lastSeen").textContent = el.lastSeen;
         $template.querySelector(".edit").dataset.id = el.id;
         $template.querySelector(".edit").dataset.name = el.name;
         $template.querySelector(".edit").dataset.plane = el.plane;
@@ -51,7 +51,6 @@ const getAll = () => {
       $table.querySelector("tbody").appendChild($fragment);
     },
     error: (err) => {
-      console.log(err);
       $table.insertAdjacentHTML(
         "afterend",
         `
@@ -65,3 +64,35 @@ const getAll = () => {
 };
 
 d.addEventListener("DOMContentLoaded", getAll);
+
+d.addEventListener("submit", (e) => {
+  if (e === $form) {
+    e.preventDefault();
+    if (!e.target.id.value) {
+      //CREATE-- POST
+      ajax({
+        url: "http://localhost:5555/planeswalkers",
+        method: "POST",
+        success: (res) => location.reload(),
+        error: () =>
+          $form.insertAdjacentHTML(
+            "afterend",
+            `
+        <div class="error-mes">
+        <h2><b>${err}</b></h2>
+        </div>
+        `
+          ),
+        data: {
+          name: e.target.name.value,
+          plane: e.target.plane.value,
+          status: e.target.status.value,
+          power: e.target.power.value,
+          lastSeen: e.target.lastSeen.value,
+        },
+      });
+    } else {
+      //UPDATE--PUT
+    }
+  }
+});
