@@ -1,0 +1,18 @@
+.error-mes {
+  background-color: red;
+  color: wheat;
+  width: 20rem;
+  height: auto;
+}
+
+.error-mes h2 {
+  text-align: center;
+}
+
+article {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

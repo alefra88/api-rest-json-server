@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "Gideon",
-        "plane": "Theros",
+      "plane": "Theros",
       "status": "Dead",
       "power": "Hieromancy",
       "lastSeen": "Amonkhet"
@@ -54,7 +54,7 @@
         "plane": "Dominaria",
       "status": "Alive",
       "power": "Spirit dragon",
-      "lastSeen": "The Meditation Realm"
+      "lastSeen": "Meditation Realm"
     }
   ],
   "blocks": [
