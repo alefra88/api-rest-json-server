@@ -9,20 +9,20 @@
       "lastSeen": "Dominaria"
     },
     {
-      "id": 2,
-      "name": "Gideon",
+      "name": "Gideon Jura",
       "plane": "Theros",
       "status": "Dead",
       "power": "Hieromancy",
-      "lastSeen": "Amonkhet"
+      "lastSeen": "Amonkhet",
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Jace",
+      "name": "Jace Beleren",
       "plane": "Dominaria",
       "status": "Alive",
       "power": "mind mage",
-      "lastSeen": "New Phyrexia"
+      "lastSeen": "New Phyrexia",
+      "id": 3
     },
     {
       "id": 4,
@@ -87,6 +87,17 @@
       "power": "fire power",
       "lastSeen": "Innistrad",
       "id": 11
+    },
+    {
+      "name": "Nicol Bolas",
+      "plane": "Dominaria",
+      "status": "Unknown",
+      "power": "Badass dragon",
+      "lastSeen": "Meditation Realm",
+      "id": 12
+    },
+    {
+      "id": 13
     }
   ],
   "blocks": [
