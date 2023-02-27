@@ -53,7 +53,7 @@ const getAll = () => {
     error: (err) => {
       $table.insertAdjacentHTML(
         "afterend",
-        `
+      `
       <div class="error-mes">
       <h2><b>${err}</b></h2>
       </div>
@@ -66,7 +66,7 @@ const getAll = () => {
 d.addEventListener("DOMContentLoaded", getAll);
 
 d.addEventListener("submit", (e) => {
-  if (e === $form) {
+  if (e.target === $form) {
     e.preventDefault();
     if (!e.target.id.value) {
       //CREATE-- POST
