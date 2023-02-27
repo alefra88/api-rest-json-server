@@ -4,18 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>crud api rest axios</title>
-    <link rel="stylesheet" href="style.css">
+    <title>crud api rest fetch</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>CRUD API REST AXIOS</h1>
+    <h1>CRUD API REST FETCH</h1>
     <section class="crud">
       <article>
         <h2 class="crud-title">Agregar Planeswalker</h2>
         <form class="crud-form">
           <input
             type="text"
-            name="nombre"
+            name="name"
             placeholder="nombre Planeswalker"
             required
           />
@@ -31,12 +31,7 @@
           <br />
           <input type="text" name="power" placeholder="power" required />
           <br />
-          <input
-            type="text"
-            name="last-seen"
-            placeholder="Last Seen"
-            required
-          />
+          <input type="text" name="lastSeen" placeholder="Last Seen" required />
           <br />
           <input type="submit" value="enviar" />
           <input type="hidden" name="id" />
@@ -47,11 +42,11 @@
         <table class="crud-table">
           <thead>
             <tr>
-              <th>Nombre</th>
-              <th>Plane</th>
-              <th>Status</th>
-              <th>Power</th>
-              <th>Last-Seen</th>
+              <th>name</th>
+              <th>plane</th>
+              <th>status</th>
+              <th>power</th>
+              <th>lastSeen</th>
             </tr>
           </thead>
           <tbody></tbody>
@@ -64,9 +59,14 @@
         <td class="plane"></td>
         <td class="status"></td>
         <td class="power"></td>
-        <td class="last-seen"></td>
+        <td class="lastSeen"></td>
+        <td>
+          <button class="edit">Editar</button>
+          <button class="delete">Eliminar</button>
+        </td>
       </tr>
     </template>
-    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="appAxios.js"></script>
   </body>
 </html>
