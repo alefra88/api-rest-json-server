@@ -53,7 +53,7 @@ const getAll = () => {
     error: (err) => {
       $table.insertAdjacentHTML(
         "afterend",
-      `
+        `
       <div class="error-mes">
       <h2><b>${err}</b></h2>
       </div>
@@ -92,7 +92,51 @@ d.addEventListener("submit", (e) => {
         },
       });
     } else {
-      //UPDATE--PUT
+      ajax({
+        url: `http://localhost:5555/planeswalkers/${e.target.id.value}`,
+        method: "PUT",
+        success: (res) => location.reload(),
+        error: () =>
+          $form.insertAdjacentHTML(
+            "afterend",
+            `
+        <div class="error-mes">
+        <h2><b>${err}</b></h2>
+        </div>
+        `
+          ),
+        data: {
+          name: e.target.name.value,
+          plane: e.target.plane.value,
+          status: e.target.status.value,
+          power: e.target.power.value,
+          lastSeen: e.target.lastSeen.value,
+        },
+      });
+    }
+  }
+});
+
+d.addEventListener("click", (e) => {
+  if (e.target.matches(".edit")) {
+    $title.textContent = "Editar Planeswalker";
+    $form.name.value = e.target.dataset.name;
+    $form.plane.value = e.target.dataset.plane;
+    $form.status.value = e.target.dataset.status;
+    $form.power.value = e.target.dataset.power;
+    $form.lastSeen.value = e.target.dataset.lastSeen;
+    $form.id.value = e.target.dataset.id;
+  }
+  if (e.target.matches(".delete")) {
+    let isDelete = confirm(`are your sure you wanna delete this object?`);
+    if (isDelete) {
+      //DELETE
+      ajax({
+        url: `http://localhost:5555/planeswalkers/${e.target.dataset.id}`,
+        method: "DELETE",
+        success: (res) => location.reload(),
+        error: () => alert(err),
+      });
     }
   }
 });

@@ -73,12 +73,20 @@
       "lastSeen": "Innistrad"
     },
     {
-      "name": "Nissa",
+      "name": "Nissa Ravane",
       "plane": "Zendikar",
       "status": "Alive",
       "power": "Natuere power",
       "lastSeen": "New Phyrexia",
       "id": 10
+    },
+    {
+      "name": "Chandra Nalaar",
+      "plane": "Kaladesh",
+      "status": "Alive",
+      "power": "fire power",
+      "lastSeen": "Innistrad",
+      "id": 11
     }
   ],
   "blocks": [
